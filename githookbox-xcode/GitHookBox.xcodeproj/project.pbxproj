@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C08821D1C953B2C000945F3 /* AbstractGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882061C953B14000945F3 /* AbstractGitHook.swift */; };
+		3C08821E1C953B2C000945F3 /* ApplypatchMsgGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882071C953B14000945F3 /* ApplypatchMsgGitHook.swift */; };
+		3C08821F1C953B2C000945F3 /* CommitMsgGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882081C953B14000945F3 /* CommitMsgGitHook.swift */; };
+		3C0882201C953B2C000945F3 /* GitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882091C953B14000945F3 /* GitHook.swift */; };
+		3C0882211C953B2C000945F3 /* GitHookIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820A1C953B14000945F3 /* GitHookIdentifier.swift */; };
+		3C0882221C953B2C000945F3 /* GitHookKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820B1C953B14000945F3 /* GitHookKit.swift */; };
+		3C0882231C953B2C000945F3 /* InvalidGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820C1C953B14000945F3 /* InvalidGitHook.swift */; };
+		3C0882241C953B2C000945F3 /* PostApplypatchGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820D1C953B14000945F3 /* PostApplypatchGitHook.swift */; };
+		3C0882251C953B2C000945F3 /* PostCheckoutGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820E1C953B14000945F3 /* PostCheckoutGitHook.swift */; };
+		3C0882261C953B2C000945F3 /* PostCommitGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08820F1C953B14000945F3 /* PostCommitGitHook.swift */; };
+		3C0882271C953B2C000945F3 /* PostMergeGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882101C953B14000945F3 /* PostMergeGitHook.swift */; };
+		3C0882281C953B2C000945F3 /* PostReceiveGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882111C953B14000945F3 /* PostReceiveGitHook.swift */; };
+		3C0882291C953B2C000945F3 /* PostRewriteGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882121C953B14000945F3 /* PostRewriteGitHook.swift */; };
+		3C08822A1C953B2C000945F3 /* PostUpdateGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882131C953B14000945F3 /* PostUpdateGitHook.swift */; };
+		3C08822B1C953B2C000945F3 /* PreApplypatchGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882141C953B14000945F3 /* PreApplypatchGitHook.swift */; };
+		3C08822C1C953B2C000945F3 /* PreAutoGcGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882151C953B14000945F3 /* PreAutoGcGitHook.swift */; };
+		3C08822D1C953B2C000945F3 /* PreCommitGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882161C953B14000945F3 /* PreCommitGitHook.swift */; };
+		3C08822E1C953B2C000945F3 /* PrepareCommitMsgGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882171C953B14000945F3 /* PrepareCommitMsgGitHook.swift */; };
+		3C08822F1C953B2C000945F3 /* PrePushGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882181C953B14000945F3 /* PrePushGitHook.swift */; };
+		3C0882301C953B2C000945F3 /* PreRebaseGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882191C953B14000945F3 /* PreRebaseGitHook.swift */; };
+		3C0882311C953B2C000945F3 /* PreReceiveGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08821A1C953B14000945F3 /* PreReceiveGitHook.swift */; };
+		3C0882321C953B2C000945F3 /* PushToCheckoutGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08821B1C953B14000945F3 /* PushToCheckoutGitHook.swift */; };
+		3C0882331C953B2C000945F3 /* UpdateGitHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08821C1C953B14000945F3 /* UpdateGitHook.swift */; };
+		3C0882361C953B73000945F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0882351C953B6F000945F3 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C981CB81C92AC4A004530A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C0882061C953B14000945F3 /* AbstractGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractGitHook.swift; sourceTree = "<group>"; };
+		3C0882071C953B14000945F3 /* ApplypatchMsgGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplypatchMsgGitHook.swift; sourceTree = "<group>"; };
+		3C0882081C953B14000945F3 /* CommitMsgGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitMsgGitHook.swift; sourceTree = "<group>"; };
+		3C0882091C953B14000945F3 /* GitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHook.swift; sourceTree = "<group>"; };
+		3C08820A1C953B14000945F3 /* GitHookIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHookIdentifier.swift; sourceTree = "<group>"; };
+		3C08820B1C953B14000945F3 /* GitHookKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHookKit.swift; sourceTree = "<group>"; };
+		3C08820C1C953B14000945F3 /* InvalidGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidGitHook.swift; sourceTree = "<group>"; };
+		3C08820D1C953B14000945F3 /* PostApplypatchGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApplypatchGitHook.swift; sourceTree = "<group>"; };
+		3C08820E1C953B14000945F3 /* PostCheckoutGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCheckoutGitHook.swift; sourceTree = "<group>"; };
+		3C08820F1C953B14000945F3 /* PostCommitGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommitGitHook.swift; sourceTree = "<group>"; };
+		3C0882101C953B14000945F3 /* PostMergeGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMergeGitHook.swift; sourceTree = "<group>"; };
+		3C0882111C953B14000945F3 /* PostReceiveGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReceiveGitHook.swift; sourceTree = "<group>"; };
+		3C0882121C953B14000945F3 /* PostRewriteGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRewriteGitHook.swift; sourceTree = "<group>"; };
+		3C0882131C953B14000945F3 /* PostUpdateGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUpdateGitHook.swift; sourceTree = "<group>"; };
+		3C0882141C953B14000945F3 /* PreApplypatchGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreApplypatchGitHook.swift; sourceTree = "<group>"; };
+		3C0882151C953B14000945F3 /* PreAutoGcGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreAutoGcGitHook.swift; sourceTree = "<group>"; };
+		3C0882161C953B14000945F3 /* PreCommitGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreCommitGitHook.swift; sourceTree = "<group>"; };
+		3C0882171C953B14000945F3 /* PrepareCommitMsgGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareCommitMsgGitHook.swift; sourceTree = "<group>"; };
+		3C0882181C953B14000945F3 /* PrePushGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePushGitHook.swift; sourceTree = "<group>"; };
+		3C0882191C953B14000945F3 /* PreRebaseGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRebaseGitHook.swift; sourceTree = "<group>"; };
+		3C08821A1C953B14000945F3 /* PreReceiveGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreReceiveGitHook.swift; sourceTree = "<group>"; };
+		3C08821B1C953B14000945F3 /* PushToCheckoutGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToCheckoutGitHook.swift; sourceTree = "<group>"; };
+		3C08821C1C953B14000945F3 /* UpdateGitHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGitHook.swift; sourceTree = "<group>"; };
+		3C0882351C953B6F000945F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3C981CBA1C92AC4A004530A3 /* githookbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = githookbox; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C981CB71C92AC4A004530A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0882051C953B14000945F3 /* GitHookKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C0882061C953B14000945F3 /* AbstractGitHook.swift */,
+				3C0882071C953B14000945F3 /* ApplypatchMsgGitHook.swift */,
+				3C0882081C953B14000945F3 /* CommitMsgGitHook.swift */,
+				3C0882091C953B14000945F3 /* GitHook.swift */,
+				3C08820A1C953B14000945F3 /* GitHookIdentifier.swift */,
+				3C08820B1C953B14000945F3 /* GitHookKit.swift */,
+				3C08820C1C953B14000945F3 /* InvalidGitHook.swift */,
+				3C08820D1C953B14000945F3 /* PostApplypatchGitHook.swift */,
+				3C08820E1C953B14000945F3 /* PostCheckoutGitHook.swift */,
+				3C08820F1C953B14000945F3 /* PostCommitGitHook.swift */,
+				3C0882101C953B14000945F3 /* PostMergeGitHook.swift */,
+				3C0882111C953B14000945F3 /* PostReceiveGitHook.swift */,
+				3C0882121C953B14000945F3 /* PostRewriteGitHook.swift */,
+				3C0882131C953B14000945F3 /* PostUpdateGitHook.swift */,
+				3C0882141C953B14000945F3 /* PreApplypatchGitHook.swift */,
+				3C0882151C953B14000945F3 /* PreAutoGcGitHook.swift */,
+				3C0882161C953B14000945F3 /* PreCommitGitHook.swift */,
+				3C0882171C953B14000945F3 /* PrepareCommitMsgGitHook.swift */,
+				3C0882181C953B14000945F3 /* PrePushGitHook.swift */,
+				3C0882191C953B14000945F3 /* PreRebaseGitHook.swift */,
+				3C08821A1C953B14000945F3 /* PreReceiveGitHook.swift */,
+				3C08821B1C953B14000945F3 /* PushToCheckoutGitHook.swift */,
+				3C08821C1C953B14000945F3 /* UpdateGitHook.swift */,
+			);
+			path = GitHookKit;
+			sourceTree = "<group>";
+		};
+		3C0882341C953B6F000945F3 /* githookbox */ = {
+			isa = PBXGroup;
+			children = (
+				3C0882351C953B6F000945F3 /* main.swift */,
+			);
+			path = githookbox;
+			sourceTree = "<group>";
+		};
+		3C981CB11C92AC4A004530A3 = {
+			isa = PBXGroup;
+			children = (
+				3C981CBC1C92AC4A004530A3 /* GitHookBox */,
+				3C981CBB1C92AC4A004530A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C981CBB1C92AC4A004530A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C981CBA1C92AC4A004530A3 /* githookbox */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C981CBC1C92AC4A004530A3 /* GitHookBox */ = {
+			isa = PBXGroup;
+			children = (
+				3C0882341C953B6F000945F3 /* githookbox */,
+				3C0882051C953B14000945F3 /* GitHookKit */,
+			);
+			path = GitHookBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C981CB91C92AC4A004530A3 /* githookbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C981CC11C92AC4A004530A3 /* Build configuration list for PBXNativeTarget "githookbox" */;
+			buildPhases = (
+				3C981CB61C92AC4A004530A3 /* Sources */,
+				3C981CB71C92AC4A004530A3 /* Frameworks */,
+				3C981CB81C92AC4A004530A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = githookbox;
+			productName = "githookbox";
+			productReference = 3C981CBA1C92AC4A004530A3 /* githookbox */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C981CB21C92AC4A004530A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dr. Kibitz";
+				TargetAttributes = {
+					3C981CB91C92AC4A004530A3 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3C981CB51C92AC4A004530A3 /* Build configuration list for PBXProject "GitHookBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C981CB11C92AC4A004530A3;
+			productRefGroup = 3C981CBB1C92AC4A004530A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C981CB91C92AC4A004530A3 /* githookbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C981CB61C92AC4A004530A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0882211C953B2C000945F3 /* GitHookIdentifier.swift in Sources */,
+				3C08822A1C953B2C000945F3 /* PostUpdateGitHook.swift in Sources */,
+				3C0882281C953B2C000945F3 /* PostReceiveGitHook.swift in Sources */,
+				3C08821D1C953B2C000945F3 /* AbstractGitHook.swift in Sources */,
+				3C0882291C953B2C000945F3 /* PostRewriteGitHook.swift in Sources */,
+				3C0882321C953B2C000945F3 /* PushToCheckoutGitHook.swift in Sources */,
+				3C0882301C953B2C000945F3 /* PreRebaseGitHook.swift in Sources */,
+				3C08822D1C953B2C000945F3 /* PreCommitGitHook.swift in Sources */,
+				3C0882231C953B2C000945F3 /* InvalidGitHook.swift in Sources */,
+				3C08822B1C953B2C000945F3 /* PreApplypatchGitHook.swift in Sources */,
+				3C0882221C953B2C000945F3 /* GitHookKit.swift in Sources */,
+				3C0882251C953B2C000945F3 /* PostCheckoutGitHook.swift in Sources */,
+				3C08822E1C953B2C000945F3 /* PrepareCommitMsgGitHook.swift in Sources */,
+				3C0882331C953B2C000945F3 /* UpdateGitHook.swift in Sources */,
+				3C0882311C953B2C000945F3 /* PreReceiveGitHook.swift in Sources */,
+				3C0882241C953B2C000945F3 /* PostApplypatchGitHook.swift in Sources */,
+				3C0882361C953B73000945F3 /* main.swift in Sources */,
+				3C0882201C953B2C000945F3 /* GitHook.swift in Sources */,
+				3C08821E1C953B2C000945F3 /* ApplypatchMsgGitHook.swift in Sources */,
+				3C0882271C953B2C000945F3 /* PostMergeGitHook.swift in Sources */,
+				3C08822F1C953B2C000945F3 /* PrePushGitHook.swift in Sources */,
+				3C08821F1C953B2C000945F3 /* CommitMsgGitHook.swift in Sources */,
+				3C08822C1C953B2C000945F3 /* PreAutoGcGitHook.swift in Sources */,
+				3C0882261C953B2C000945F3 /* PostCommitGitHook.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C981CBF1C92AC4A004530A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DIGNORE_GIT_HOOK_KIT_IMPORT";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C981CC01C92AC4A004530A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3C981CC21C92AC4A004530A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = githookbox;
+			};
+			name = Debug;
+		};
+		3C981CC31C92AC4A004530A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = githookbox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C981CB51C92AC4A004530A3 /* Build configuration list for PBXProject "GitHookBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C981CBF1C92AC4A004530A3 /* Debug */,
+				3C981CC01C92AC4A004530A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C981CC11C92AC4A004530A3 /* Build configuration list for PBXNativeTarget "githookbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C981CC21C92AC4A004530A3 /* Debug */,
+				3C981CC31C92AC4A004530A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C981CB21C92AC4A004530A3 /* Project object */;
+}
